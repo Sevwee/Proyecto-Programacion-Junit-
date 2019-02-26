@@ -1,0 +1,148 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class pOperaciones {
+   
+    @Test
+    void SumaPositivos() {
+        Operaciones sum = new Operaciones ();
+        sum.suma(2, 2);
+        assertTrue(sum.resultado==4);
+    }
+   
+    @Test
+    void SumaMayorQue0() {
+        Operaciones sum = new Operaciones ();
+        sum.suma(4, 2);
+        assertTrue(sum.resultado>0);
+    }
+   
+    @Test
+    void SumaNegativos() {
+        Operaciones sum = new Operaciones ();
+        sum.suma(-4, -2);
+        assertTrue(sum.resultado==-6);
+    }
+   
+    @Test
+    void SumaMenorQue0() {
+        Operaciones sum = new Operaciones ();
+        sum.suma(-1, -2);
+        assertTrue(sum.resultado<0);
+    }
+   
+    @Test
+    void SumaVariados() {
+        Operaciones sum = new Operaciones ();
+        sum.suma(1, -1);
+        assertTrue(sum.resultado==0);
+    }
+   
+    @Test
+    void RestaPositivos() {
+        Operaciones res = new Operaciones ();
+        res.resta(3, 2);
+        assertTrue(res.resultado==1);
+    }
+   
+    @Test
+    void RestaMayorQue0() {
+        Operaciones res = new Operaciones ();
+        res.resta(2, 1);
+        assertTrue(res.resultado>0);
+    }
+   
+    @Test
+    void RestaNegativos() {
+        Operaciones res = new Operaciones ();
+        res.resta(-1, -2);
+        assertTrue(res.resultado==1);
+    }
+   
+    @Test
+    void RestaMenorQue0() {
+        Operaciones res = new Operaciones ();
+        res.resta(-2, -1);
+        assertTrue(res.resultado<0);
+    }
+   
+    @Test
+    void RestaVariados() {
+        Operaciones res = new Operaciones ();
+        res.resta(1, -2);
+        assertTrue(res.resultado==3);
+    }
+   
+    @Test
+    void multiPositivos() {
+        Operaciones mul = new Operaciones ();
+        mul.multiplica(1, 2);
+        assertTrue(mul.resultado==2);
+    }
+   
+    @Test
+    void multiMayorQue0() {
+        Operaciones mul = new Operaciones ();
+        mul.multiplica(1, 2);
+        assertTrue(mul.resultado>0);
+    }
+   
+    @Test
+    void multiNegativos() {
+        Operaciones mul = new Operaciones ();
+        mul.multiplica(-1, -2);
+        assertTrue(mul.resultado==2);
+    }
+   
+    @Test
+    void multiMenorQue0() {
+        Operaciones mul = new Operaciones ();
+        mul.multiplica(1, -2);
+        assertTrue(mul.resultado<0);
+    }
+   
+    @Test
+    void multiVariados() {
+        Operaciones mul = new Operaciones ();
+        mul.multiplica(1, -2);
+        assertTrue(mul.resultado==-2);
+    }
+   
+    @Test
+    void DivPositivos() {
+        Operaciones div = new Operaciones ();
+        div.suma(2, 1);
+        assertTrue(div.resultado==2);
+    }
+   
+    @Test
+    void divMayorQue0() {
+        Operaciones div = new Operaciones ();
+        div.suma(2, 1);
+        assertTrue(div.resultado>0);
+    }
+   
+    @Test
+    void divNegativos() {
+        Operaciones div = new Operaciones ();
+        div.suma(-4, -2);
+        assertTrue(div.resultado==2);
+    }
+   
+    @Test
+    void divMenorQue0() {
+        Operaciones div = new Operaciones ();
+        div.suma(-2, 1);
+        assertTrue(div.resultado<0);
+    }
+   
+    @Test
+    void divVariados() {
+        Operaciones div = new Operaciones ();
+        div.suma(-2, 1);
+        assertTrue(div.resultado==-2);
+    }
+
+}
+
